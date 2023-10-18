@@ -54,4 +54,21 @@ $(document).ready(function(){
             scrollTop: destino.offset().top
         }, 1000)
     })
+
+    //Levando o usuário para a seção desejada
+    $('#link-sobre').click(function(){
+        $('html').animate({scrollTop: $('#sobre-a-loja').offset().top}, 1000)
+    })
+
+    $('#link-destaque').click(function(){
+        $('html').animate({scrollTop: $('#em-destaque').offset().top}, 1000)
+    })
+
+    $('#link-promocoes').click(function(){
+        $('html').animate({scrollTop: $('#promocoes').offset().top}, 1000)
+    })
+
+    $('#link-contato').click(function(){
+        $('html').animate({scrollTop: $('#contact').offset().top}, 1000)
+    })
 })
